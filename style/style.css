@@ -1,0 +1,47 @@
+* {
+    /*outline: 1px red solid;*/
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.project_name {
+    color: #808080;
+}
+
+#navigation {
+    background: #dedede;
+    height: 20%;
+    border-radius: 5px;
+}
+
+.menu_links {
+    display: inline-block;
+    color: #9c9d90;
+    width: calc(98%/6);
+    padding: 5px 0px;
+    text-decoration: none;
+    font-size: 100%;
+    text-align: center;
+}
+
+#main_block {
+    /*display: inline-block;*/
+    width: 76%;
+    margin: 0 auto;
+    min-height: 100vh;
+    /*align: center;*/
+}
+
+.footer {
+    position: absolute;
+    /*right: 0;*/
+    bottom: 0;
+    /*left: 0;*/
+    padding-bottom: 5px;
+    /*background-color: #efefef;*/
+    /*text-align: left;*/
+}
