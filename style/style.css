@@ -21,11 +21,50 @@ body {
 .menu_links {
     display: inline-block;
     color: #9c9d90;
-    width: calc(98%/6);
-    padding: 5px 0px;
+    width: calc(98%/6 - 1px);
+    padding: 10px 0px;
     text-decoration: none;
     font-size: 100%;
     text-align: center;
+    border-right: 1px #9c9d90 solid;
+    /*margin-left: 0;*/
+}
+
+/*.menu_links:active {*/
+    /*border-bottom: 0px;*/
+    /*background: #7ab9e7;*/
+    /*color: white;*/
+    /*!*transition: all 0.5s;*!*/
+/*}*/
+
+.menu_links:hover {
+    background: #377bb4;
+    color: white;
+    /*border-radius: 5px;*/
+}
+
+#navigation li {
+    display: inline;
+    /*margin-left: 0;*/
+}
+/*#navigation:first-child a:active {*/
+    /*border-bottom-left-radius: 5px;*/
+    /*border-top-left-radius: 5px;*/
+/*}*/
+
+/*#navigation:last-child a:active {*/
+    /*border-bottom-right-radius-radius: 5px;*/
+    /*border-top-right-radius-radius: 5px;*/
+/*}*/
+
+#navigation:first-child a:hover {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#navigation:last-child a:hover {
+    border-bottom-right-radius-radius: 5px;
+    border-top-right-radius-radius: 5px;
 }
 
 #main_block {
@@ -36,12 +75,85 @@ body {
     /*align: center;*/
 }
 
+#middle_part {
+    padding: 30px 20px;
+}
+
+#main_top_title {
+    text-align: center
+}
+
+#main_top_text {
+    text-align: center;
+}
+
+#main_top_sign_button {
+    /*width: 80%;*/
+    /*height: 30px;*/
+    background: #0f7f12;
+    color: white;
+    font-size: 100%;
+    border-radius: 5px;
+    border: 0px;
+    outline: 0px;
+    text-align: center;
+    /*margin-top: 20px;*/
+    width: 150px;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+#main_bottom {
+    padding: 0px 0px 70px 0px;
+}
+
+.main_bottom_news {
+    display: inline-block;
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 650px) {
+    .main_bottom_news {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu_links {
+        width: calc(94%/6 - 1px);
+    }
+
+    #main_bottom {
+        font-size: 90%;
+        padding: 0px 0px 70px 0px;
+    }
+
+    .main_bottom_news {
+        display: block;
+        width: 100%;
+    }
+}
+
+.main_bottom_news_button {
+    background: #4159c7;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+
 .footer {
     position: absolute;
-    /*right: 0;*/
     bottom: 0;
-    /*left: 0;*/
     padding-bottom: 5px;
-    /*background-color: #efefef;*/
-    /*text-align: left;*/
+}
+
+#footer_text {
+    color: #585958;
 }
